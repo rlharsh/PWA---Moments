@@ -1,10 +1,11 @@
-const staticCacheName = 'site-static-v3';
+const staticCacheName = 'site-static-v5';
 const assets = [
     '/',
     '/index.html',
     '/service-worker.js',
     '/logo.png',
-    '/crying_cat.webp'
+    '/crying_cat.webp',
+    '/manifest.json'
 ];
 
 self.addEventListener('install', evt => {
