@@ -62,6 +62,7 @@ body {
 	margin: 1rem;
 	font-size: 1.4rem;
 	color: var(--text);
+	font-family: 'ui-light';
 }
 
 .link:link,
@@ -257,7 +258,7 @@ opacity: 0;
 
 .cta-board > h1 {
     font-family: 'ui-bold';
-    color: var(--text);
+    color: var(--darkest-purple);
     font-size: 1.4rem;
 	margin-left: 1rem;
 	margin-bottom: -1rem;
