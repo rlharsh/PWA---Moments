@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v7';
+const staticCacheName = 'site-static-v8';
 const dynamicCache = 'site-dynamic-v1';
 const assets = [
     '/',
@@ -31,7 +31,7 @@ self.addEventListener('activate', evt => {
 
 self.addEventListener('fetch', evt => {
 
-    if (!(evt.request.url.indexOf('http') === 0)) return;
+    if (!(evt.request.url.indexOf('http') === 0)) return
 
     evt.respondWith(
         caches.match(evt.request).then(cacheRes => {
