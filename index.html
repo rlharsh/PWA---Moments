@@ -47,6 +47,21 @@
           </nav>
     </div>
 
+    <!-- Landing Page -->
+    <div class="landing-wrapper">
+
+        <!-- Header -->
+        <div id="header-container" class="header-container">
+            <div class="user-image-container">
+                <div id="user-image" class="user-image"></div>
+            </div>
+            <h1>Peggy Harsh</h1>
+            <h2>@peggy.harsh</h2>
+        </div>
+
+    </div>
+    <!-- End Landing Page -->
+
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
@@ -54,6 +69,8 @@
                 .catch(() => console.log('service worker not registered'));
         }
     </script>
+
+    <script src="/assets/js/dots.js"></script>
     <noscript>Please enable JavaScript to continue using this application.</noscript>
 
 </body>

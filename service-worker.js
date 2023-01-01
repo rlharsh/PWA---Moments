@@ -11,6 +11,8 @@ const assets = [
     '/assets/fonts/Montserrat-Regular.ttf',
     '/assets/fonts//Montserrat-ExtraLight.ttf',
     '/assets/images/ui/final_logo.png',
+    '/assets/images/ui/avatar.jpg',
+    '/assets/js/dots.js',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'
 ];

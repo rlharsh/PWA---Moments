@@ -13,6 +13,14 @@
     src: url('/assets/fonts//Montserrat-ExtraLight.ttf');
 }
 
+:root {
+    --darkest-purple: #937DC2;
+    --dark-purple: #C689C6;
+    --light-pink: #FFABE1;
+    --lightest-pink: #FFE6F7;
+    --text: #212427;
+}
+
 body {
     font-family: 'ui-regular';
     overscroll-behavior: contain;
@@ -143,3 +151,63 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.landing-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+    gap: 0.6rem;
+}
+
+.header-container > h1 {
+    font-family: 'ui-bold';
+    color: var(--dark-purple);
+    font-size: 1.4rem;
+}
+
+.header-container > h2 {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.user-image-container {
+	height: 180px;
+	width: 180px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-top: 2rem;
+	z-index: 1;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	margin-bottom: 1rem;
+}
+
+.user-image {
+	width: 80%;
+	height: 80%;
+	background-image: url('/assets/images/ui/avatar.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	left: 0;
+}
+
+.box {
+    background-color: #937DC2;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+  }
