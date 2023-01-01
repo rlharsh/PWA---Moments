@@ -245,11 +245,19 @@ opacity: 0;
 	width: 100%;
 	height: 8rem;
 	display: flex;
-	min-width: 100%;
-	min-height: 8rem;
 	overflow-x: auto;
-	gap: 1rem;
+	gap: 0.4rem;
+	z-index: 1;
 }
+
+.cta-actions:first-child {
+	margin-left: 1rem;
+}
+
+.cta-actions:last-child {
+	margin-right: 2rem;
+}
+
 
 .cta-box {
 	width: 12rem;
