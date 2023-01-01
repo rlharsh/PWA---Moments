@@ -1,23 +1,30 @@
-const staticCacheName = 'site-static';
+const staticCacheName = 'site-static-v3';
 const assets = [
     '/',
     '/index.html',
     '/service-worker.js',
-    '/logo.png'
+    '/logo.png',
+    '/crying_cat.webp'
 ];
 
 self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open(staticCacheName)
         .then(cache => {
-            console.log('Caching shell assets.');
             cache.addAll(assets);
         })
     );
 });
 
 self.addEventListener('activate', evt => {
-
+    evt.waitUntil(
+        caches.keys().then(keys => {
+            return Promise.all(keys
+                .filter(key => key !== staticCacheName)
+                .map(key => caches.delete(key))
+                );
+        })
+    );
 });
 
 self.addEventListener('fetch', evt => {
