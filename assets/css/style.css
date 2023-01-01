@@ -25,7 +25,7 @@ body {
     font-family: 'ui-regular';
     overscroll-behavior: contain;
 	color: var(--text);
-	background-color: rgba(240, 240, 240);
+	background-color: #FFF;
 }
 
 #nav-container {
