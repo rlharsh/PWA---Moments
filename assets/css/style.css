@@ -247,7 +247,7 @@ opacity: 0;
 	display: flex;
 	overflow-x: auto;
 	gap: 0.4rem;
-	z-index: 1;
+	z-index: 6;
 }
 
 .cta-actions:first-child {
@@ -255,9 +255,12 @@ opacity: 0;
 }
 
 .cta-actions:last-child {
-	margin-right: 2rem;
+	margin-left: 2rem;
 }
 
+.cta-actions::-webkit-scrollbar {
+	display: none;
+}
 
 .cta-box {
 	width: 12rem;
