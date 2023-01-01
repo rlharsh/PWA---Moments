@@ -246,16 +246,17 @@ opacity: 0;
 	height: 8rem;
 	display: flex;
 	overflow-x: auto;
-	gap: 0.4rem;
+	gap: 0.6rem;
 	z-index: 6;
+	align-items: center;
 }
 
-.cta-actions:first-child {
+.cta-actions .cta-box:first-child {
 	margin-left: 1rem;
 }
 
-.cta-actions:last-child {
-	margin-left: 2rem;
+.cta-actions .cta-box:last-child {
+	margin-right: 1rem;
 }
 
 .cta-actions::-webkit-scrollbar {
@@ -264,8 +265,8 @@ opacity: 0;
 
 .cta-box {
 	width: 12rem;
-	height: 8rem;
+	height: 6rem;
 	min-width: 12rem;
-	background-color: orange;
+	background-color: var(--darkest-purple);
 	border-radius: 4px;
 }
