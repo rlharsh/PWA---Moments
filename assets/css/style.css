@@ -239,9 +239,25 @@ opacity: 0;
 	transition: all 0.4s;
 }
 
-.cta-actions {
+.cta-board {
 	position: fixed;
 	bottom: -100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 6;
+	transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-board > h1 {
+    font-family: 'ui-bold';
+    color: var(--text);
+    font-size: 1.4rem;
+	margin-left: 1rem;
+	margin-bottom: -1rem;
+}
+
+.cta-actions {
 	width: 100%;
 	height: 12rem;
 	display: flex;
@@ -249,7 +265,6 @@ opacity: 0;
 	gap: 0.6rem;
 	z-index: 6;
 	align-items: center;
-	transition: all 0.4s;
 }
 
 .show-cta-actions {
@@ -269,9 +284,64 @@ opacity: 0;
 }
 
 .cta-box {
+	position: relative;
 	width: 12rem;
 	height: 8rem;
 	min-width: 12rem;
 	background-color: var(--darkest-purple);
 	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cta-darkness {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: inherit;
+}
+
+.cta-box > h1 {
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.2rem;
+	color: #FFF;
+	font-family: 'ui-bold';
+}
+
+.cta-box > i {
+	position: absolute;
+	color: #FFF;
+	font-size: 2rem;
+}
+
+.cta-memory {
+	background-image: url('/assets/images/ui/cta/memory.jpg');
+}
+
+.cta-relationship {
+	background-image: url('/assets/images/ui/cta/relationship.jpg');
+}
+
+.cta-reminder {
+	background-image: url('/assets/images/ui/cta/reminder.jpg');
+}
+
+.cta-person {
+	background-image: url('/assets/images/ui/cta/person.jpg');
+}
+
+.cta-random {
+	background-image: url('/assets/images/ui/cta/random.jpg');
 }

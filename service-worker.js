@@ -14,6 +14,11 @@ const assets = [
     '/assets/images/ui/avatar.jpg',
     '/assets/js/dots.js',
     '/assets/js/transitions.js',
+    '/assets/images/ui/cta/memory.jpg',
+    '/assets/images/ui/cta/person.jpg',
+    '/assets/images/ui/cta/random.jpg',
+    '/assets/images/ui/cta/relationship.jpg',
+    '/assets/images/ui/cta/reminder.jpg',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'
 ];
