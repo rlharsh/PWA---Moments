@@ -130,3 +130,16 @@ body {
 .checkbox {
 	display: none;
 }
+
+.logo-container {
+    width: 14rem;
+    position: absolute;
+	top: 36%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo-container > img {
+    width: 100%;
+    height: 100%;
+}

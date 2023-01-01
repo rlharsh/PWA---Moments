@@ -10,6 +10,7 @@ const assets = [
     '/assets/fonts/Montserrat-Bold.ttf',
     '/assets/fonts/Montserrat-Regular.ttf',
     '/assets/fonts//Montserrat-ExtraLight.ttf',
+    '/assets/images/ui/final_logo.png',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'
 ];
