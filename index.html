@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-
     <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
-    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Magic Moments">
     <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF">
-
     <meta name="theme-color" content="#FFFFFF">
     <meta name="theme-color" content="#FFFFFF">
 
     <link rel="manifest" href="manifest.json">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Stylesheet Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Magic Moments</title>
 </head>
 <body>
     
-    <img src="/crying_cat.webp" alt="Crying Kitty Cat">
-    Yeetaleetdeet Update Test
+    <!-- Navigation Container -->
+    <div>
+        <input type="checkbox" id="navi-toggle" class="checkbox" />
+        <label for="navi-toggle">
+            <span class="round-button menu-button fa-sharp fa-solid fa-bars"></span>
+        </label>
+
+        <nav class="nav">
+            <ul class="list">
+              <li class="item"> <a class="link"> Memories <i class="fa-solid fa-rainbow"></i></a> </li>
+              <li class="item"> <a class="link"> Relationships <i class="fa-solid fa-people-arrows"></i></a> </li>
+              <li class="item"> <a class="link"> Reminders <i class="fa-solid fa-user-group"></i></a> </li>
+              <li class="item"> <a class="link"> People & Other <i class="fa-solid fa-user-group"></i></a> </li>
+            </ul>
+          </nav>
+    </div>
 
     <script>
         if ('serviceWorker' in navigator) {

@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'ui-bold';
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ui-regular';
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ui-light';
+    src: url('/assets/fonts//Montserrat-ExtraLight.ttf');
+}
+
+body {
+    font-family: 'ui-regular';
+    overscroll-behavior: contain;
+}
+
+.nav {
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: -60vw;
+	z-index: 2;
+	opacity: 0;
+	width: 46%;
+	transition: all .4s;
+}
+
+.list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style: none;
+	text-align: right;
+	width: 100%;
+	padding-left: 1rem;
+}
+
+.item {
+	margin: 1rem;
+	font-size: 1rem;
+	color: black;
+}
+
+.link:link,
+  .link:visited {
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 300;
+	padding: 1rem 2rem;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+	background-size: 220%;
+	transition: all 0.4s;
+}
+
+.link:hover,
+  .link:active {
+	cursor: pointer;
+}
+
+.checkbox:checked ~ .nav {
+	opacity: 1;
+	width: 46%;
+	left: 0;
+}
+
+.round-button {
+	cursor: pointer;
+	background-color: #FFF;
+	border-radius: 50%;
+	height: 2.8rem;
+	width: 2.8rem;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #000;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	z-index: 14;
+}
+
+.round-button-two {
+	cursor: pointer;
+	background-color: #FFF;
+	border-radius: 50%;
+	height: 2.8rem;
+	width: 2.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #000;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	z-index: 4;
+}
+
+.menu-button {
+	top: 1rem;
+	left: 1rem;
+}
+
+.people-button {
+	top: 1rem;
+	right: 1rem;
+}
+
+.share-button {
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.settings-button {
+	bottom: 1rem;
+	left: 1rem;
+}
+
+.checkbox {
+	display: none;
+}

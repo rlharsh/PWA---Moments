@@ -5,8 +5,13 @@ const assets = [
     '/index.html',
     '/service-worker.js',
     '/logo.png',
-    '/crying_cat.webp',
-    '/manifest.json'
+    '/manifest.json',
+    './assets/css/style.css',
+    '/assets/fonts/Montserrat-Bold.ttf',
+    '/assets/fonts/Montserrat-Regular.ttf',
+    '/assets/fonts//Montserrat-ExtraLight.ttf',
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'
 ];
 
 self.addEventListener('install', evt => {
