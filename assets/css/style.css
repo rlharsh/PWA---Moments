@@ -96,7 +96,6 @@ body {
 	align-items: center;
 	font-size: 1.2rem;
 	color: #000;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	z-index: 14;
 }
 
@@ -111,7 +110,6 @@ body {
 	align-items: center;
 	font-size: 1.2rem;
 	color: #000;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	z-index: 4;
 }
 
@@ -170,7 +168,7 @@ body {
 
 .header-container > h1 {
     font-family: 'ui-bold';
-    color: var(--dark-purple);
+    color: var(--darkest-purple);
     font-size: 1.4rem;
 }
 
@@ -180,6 +178,7 @@ body {
 }
 
 .user-image-container {
+    position: relative;
 	height: 180px;
 	width: 180px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -190,8 +189,22 @@ body {
 	border-radius: 50%;
 	margin-top: 2rem;
 	z-index: 1;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	margin-bottom: 1rem;
+}
+
+.edit-container-header {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #FFF;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkest-purple);
+    font-size: 1.2rem;
 }
 
 .user-image {
@@ -210,4 +223,8 @@ body {
     position: absolute;
     border-radius: 50%;
     z-index: 0;
+  }
+
+  .shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }

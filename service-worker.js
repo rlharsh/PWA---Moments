@@ -41,7 +41,6 @@ self.addEventListener('fetch', evt => {
 
     if (!(evt.request.url.indexOf('http') === 0)) return;
 
-
     const { request } = evt;
 
     if (request.cache === 'only-if-cached' && request.mode !== 'same-origin') {
