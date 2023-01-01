@@ -35,7 +35,6 @@ body {
 .nav {
 	position: absolute;
 	left: -60vw;
-	z-index: 2;
 	opacity: 0;
 	width: 100%;
 	top: 0;
@@ -282,7 +281,7 @@ body {
 	background-color: #937DC260;
 	position: absolute;
 	border-radius: 50%;
-	z-index: 0;
+	z-index: -2;
 }
 
 .shadow {
