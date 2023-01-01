@@ -38,7 +38,7 @@ body {
 	z-index: 2;
 	opacity: 0;
 	width: 100%;
-	top: 70px;
+	top: 0;
 	transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	overflow: hidden;
 	display: flex;
@@ -46,6 +46,55 @@ body {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+}
+
+.nav-menu {
+	margin: 0.6rem auto;
+	border-radius: 6px;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	grid-gap: 20px 20px;
+	justify-content: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.nav-menu__card {
+	position: relative;
+	background-color: #FFF;
+	border-radius: 6px;
+	color: var(--text);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0.4rem;
+}
+
+.nav-menu__card > h1 {
+	font-family: 'ui-bold';
+}
+
+.nav-menu__icon {
+	width: 16rem;
+	margin-bottom: 0.4rem;
+}
+
+.nav-menu__icon > img {
+	width: 2rem;
+}
+
+.nav-container {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	width: 100%;
+}
+
+.nav-container > h1 {
+	padding-left: 1.4rem;
+	font-family: 'ui-bold';
 }
 
 .list {
@@ -151,15 +200,15 @@ body {
 }
 
 .logo-container {
+	margin-top: 2rem;
     width: 100%;
-	margin-bottom: 4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .logo-container > img {
-    width: 50%;
+    width: 30%;
 }
 
 .landing-wrapper {
@@ -263,15 +312,13 @@ opacity: 0;
 
 .cta-board > h1 {
     font-family: 'ui-bold';
-    color: var(--darkest-purple);
-    font-size: 1.4rem;
+    color: var(--text);
 	margin-left: 1rem;
-	margin-bottom: -1rem;
+	margin-bottom: 0.4rem;
 }
 
 .cta-actions {
 	width: 100%;
-	height: 12rem;
 	display: flex;
 	overflow-x: auto;
 	gap: 0.6rem;
@@ -297,8 +344,8 @@ opacity: 0;
 
 .cta-box {
 	position: relative;
-	width: 12rem;
-	height: 8rem;
+	width: 6rem;
+	height: 4rem;
 	min-width: 12rem;
 	background-color: var(--darkest-purple);
 	border-radius: 4px;
