@@ -24,17 +24,18 @@
 body {
     font-family: 'ui-regular';
     overscroll-behavior: contain;
+	color: var(--text);
 }
 
 .nav {
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: -60vw;
 	z-index: 2;
 	opacity: 0;
 	width: 46%;
-	transition: all .4s;
+	transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .list {
@@ -138,11 +139,10 @@ body {
 }
 
 .logo-container {
-    width: 14rem;
+    width: 12rem;
     position: absolute;
-	top: 36%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	bottom: 6rem;
+	right: -0.8rem;
 }
 
 .logo-container > img {
@@ -153,7 +153,8 @@ body {
 .landing-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: #FFF;
+	opacity: 100%;
+	transition: all 0.4s;
 }
 
 .header-container {
@@ -179,8 +180,8 @@ body {
 
 .user-image-container {
     position: relative;
-	height: 180px;
-	width: 180px;
+	height: 140px;
+	width: 140px;
 	background-color: rgba(255, 255, 255, 0.8);
 	display: flex;
 	flex-direction: column;
@@ -194,17 +195,17 @@ body {
 
 .edit-container-header {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    right:  0.6rem;
+    bottom: 0.6rem;
     background-color: #FFF;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--darkest-purple);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .user-image {
@@ -219,12 +220,41 @@ body {
 }
 
 .box {
-    background-color: #937DC2;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 0;
-  }
+	background-color: #937DC2;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+}
 
-  .shadow {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
+.shadow {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fade-out {
+opacity: 0;
+}
+
+.primary-content-wrapper {
+	position: relative;
+	transition: all 0.4s;
+}
+
+.cta-actions {
+	position: fixed;
+	bottom: 1rem;
+	width: 100%;
+	height: 8rem;
+	display: flex;
+	min-width: 100%;
+	min-height: 8rem;
+	overflow-x: auto;
+	gap: 1rem;
+}
+
+.cta-box {
+	width: 12rem;
+	height: 8rem;
+	min-width: 12rem;
+	background-color: orange;
+	border-radius: 4px;
+}

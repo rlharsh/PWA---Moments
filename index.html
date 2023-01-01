@@ -26,7 +26,32 @@
     <title>Magic Moments</title>
 </head>
 <body>
-    
+
+    <!-- CTA -->
+    <div class="cta-actions">
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+        <div class="cta-box shadow">
+
+        </div>
+    </div>
+
     <!-- Navigation Container -->
     <div>
         <input type="checkbox" id="navi-toggle" class="checkbox" />
@@ -35,10 +60,10 @@
         </label>
 
         <nav class="nav">
+            <ul class="list">
             <div class="logo-container">
                 <img src="./assets/images/ui/final_logo.png" alt="Magic Moments Logo">
             </div>
-            <ul class="list">
               <li class="item"> <a class="link"> Memories <i class="fa-solid fa-rainbow"></i></a> </li>
               <li class="item"> <a class="link"> Relationships <i class="fa-solid fa-people-arrows"></i></a> </li>
               <li class="item"> <a class="link"> Reminders <i class="fa-solid fa-user-group"></i></a> </li>
@@ -46,24 +71,32 @@
             </ul>
           </nav>
     </div>
+    
+    <!-- Main Content Wrapper -->
+    <div id="primary-content-wrapper" class="primary-content-wrapper shadow">
 
-    <!-- Landing Page -->
-    <div class="landing-wrapper">
+        <!-- Landing Page -->
+        <div id='landing-wrapper' class="landing-wrapper">
 
-        <!-- Header -->
-        <div id="header-container" class="header-container">
-            <div class="user-image-container shadow">
-                <div id="user-image" class="user-image"></div>
-                <div class="edit-container-header shadow">
-                    <i class="fa-solid fa-pencil"></i>
+            <!-- Header -->
+            <div id="header-container" class="header-container">
+                <div class="user-image-container shadow">
+                    <div id="user-image" class="user-image"></div>
+                    <div class="edit-container-header shadow">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
                 </div>
+                <h1>Peggy Harsh</h1>
+                <h2>@peggy.harsh</h2>
             </div>
-            <h1>Peggy Harsh</h1>
-            <h2>@peggy.harsh</h2>
+
         </div>
+        <!-- End Landing Page -->
 
     </div>
-    <!-- End Landing Page -->
+
+
+
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -73,7 +106,8 @@
         }
     </script>
 
-    <script src="/assets/js/dots.js"></script>
+    <!--  <script src="/assets/js/dots.js"></script> -->
+    <script src="/assets/js/transitions.js"></script>
     <noscript>Please enable JavaScript to continue using this application.</noscript>
 
 </body>
