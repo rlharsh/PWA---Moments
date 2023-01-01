@@ -302,9 +302,11 @@ opacity: 0;
 	position: fixed;
 	bottom: -100vh;
 	width: 100%;
+	height: 6rem;
 	display: flex;
 	flex-direction: column;
 	z-index: 6;
+	padding-bottom: 1rem;
 }
 
 .cta-board > h1 {
@@ -316,6 +318,7 @@ opacity: 0;
 
 .cta-actions {
 	width: 100%;
+	height: 100%;
 	display: flex;
 	overflow-x: auto;
 	gap: 0.6rem;
@@ -344,7 +347,7 @@ opacity: 0;
 	width: 6rem;
 	height: 4rem;
 	min-width: 12rem;
-	background-color: var(--darkest-purple);
+	background-color: #FFF;
 	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
@@ -382,22 +385,28 @@ opacity: 0;
 	font-size: 2rem;
 }
 
+
 .cta-memory {
 	background-image: url('/assets/images/ui/cta/memory.jpg');
+	border-radius: 6px;
 }
 
 .cta-relationship {
 	background-image: url('/assets/images/ui/cta/relationship.jpg');
+	border-radius: 6px;
 }
 
 .cta-reminder {
 	background-image: url('/assets/images/ui/cta/reminder.jpg');
+	border-radius: 6px;
 }
 
 .cta-person {
 	background-image: url('/assets/images/ui/cta/person.jpg');
+	border-radius: 6px;
 }
 
 .cta-random {
 	background-image: url('/assets/images/ui/cta/random.jpg');
+	border-radius: 6px;
 }
