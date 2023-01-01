@@ -31,8 +31,53 @@ self.addEventListener('activate', evt => {
 
 self.addEventListener('fetch', evt => {
 
-    if (!(evt.request.url.indexOf('http') === 0)) return
+    if (!(evt.request.url.indexOf('http') === 0)) return;
 
+
+    const { request } = evt;
+
+    if (request.cache === 'only-if-cached' && request.mode !== 'same-origin') {
+        return;
+    }
+
+    evt.respondWith(async function() {
+        const cache = await caches.open(staticCacheName);
+
+        const cachedResponsePromise = await cache.match(request);
+        const networkResponsePromise = fetch(request);
+
+        if (request.url.startsWith(self.location.origin)) {
+            evt.waitUntil(async function() {
+                const networkResponse = await networkResponsePromise;
+
+                await cache.put(request, networkResponse.clone());
+            }())
+        }
+
+        return cachedResponsePromise || networkResponsePromise;
+    }())
+});
+
+// Open the cache
+
+/*
+    evt.respondWith(caches.open(staticCacheName).then((cache) => {
+        // Go to the network first
+        return fetch(evt.request.url).then((fetchedResponse) => {
+        cache.put(evt.request, fetchedResponse.clone());
+
+        return fetchedResponse;
+        }).catch(() => {
+            console.log("Error 1 " + evt.request)
+        // If the network is unavailable, get
+        return cache.match(evt.request.url);
+        });
+    }));
+*/
+    
+
+
+/*
     evt.respondWith(
         caches.match(evt.request).then(cacheRes => {
             return cacheRes || fetch(evt.request).then(fetchRes => {
@@ -43,5 +88,5 @@ self.addEventListener('fetch', evt => {
             });
         })
     );
-});
-
+})
+*/
