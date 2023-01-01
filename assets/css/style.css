@@ -25,6 +25,7 @@ body {
     font-family: 'ui-regular';
     overscroll-behavior: contain;
 	color: var(--text);
+	background-color: rgba(240, 240, 240);
 }
 
 #nav-container {
@@ -48,14 +49,18 @@ body {
 }
 
 .list {
-	margin-top: -2rem;
 	list-style: none;
 	text-align: center;
+	background-color: rgba(200, 200, 200, 0.4);
+	border-radius: 6px;
+	width: 90%;
 }
 
 .item > i {
 	color: var(--darkest-purple);
 	margin-bottom: 0.4rem;
+	font-size: 1.2rem;
+	margin-top: 0.4rem;
 }
 
 .item {
