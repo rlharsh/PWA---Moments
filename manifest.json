@@ -1,7 +1,7 @@
 {
     "name": "Magic Moments",
     "short_name": "Moments",
-    "start_url": "/?home-true",
+    "start_url": "/index.html",
     "icons": [
         {
             "src": "icons/manifest-icon-192.maskable.png",
