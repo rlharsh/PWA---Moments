@@ -175,8 +175,8 @@ body {
 }
 
 .menu-button {
-	bottom: 1rem;
-	right: 1rem;
+	bottom: 2rem;
+	right: 2rem;
 }
 
 .people-button {
@@ -375,7 +375,7 @@ opacity: 0;
 }
 
 .show-cta-actions {
-	bottom: 4rem;
+	bottom: 6rem;
 }
 
 .cta-actions .cta-box:first-child {
