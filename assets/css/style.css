@@ -558,7 +558,8 @@ opacity: 0;
 	border-radius: 6px;
 	background-color: var(--darkest-purple);
 	border: 0;
-	height: 30px;
 	color: #FFF;
 	font-family: 'ui-bold';
+	padding: 1rem;
+	text-align: center;
 }
