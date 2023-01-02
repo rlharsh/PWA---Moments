@@ -24,7 +24,7 @@
     --lightest-pink: #FFE6F7;
     --text: #212427;
 	--text-light: rgba(0, 0, 0, 0.2);
-	--light-grey: rgba(220, 220, 220, 0.6);
+	--light-grey: rgba(220, 220, 220, 0.4);
 	--light-text: rgbh(220, 220, 220, 1);
 }
 
@@ -219,6 +219,7 @@ body {
     width: 100%;
     height: 100vh;
 	opacity: 100%;
+	text-align: center;
 }
 
 .header-container {
@@ -548,5 +549,16 @@ opacity: 0;
 
 .grey-container > h1 {
 	color: var(--darkest-purple);
+	font-family: 'ui-bold';
+}
+
+.refresh-button {
+	margin-top: 1rem;
+	width: 90%;
+	border-radius: 6px;
+	background-color: var(--darkest-purple);
+	border: 0;
+	height: 30px;
+	color: #FFF;
 	font-family: 'ui-bold';
 }

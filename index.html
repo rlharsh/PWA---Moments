@@ -209,10 +209,21 @@
                     <h1>No Upcoming Moments</h1>
                 </div>
             </div>
+            <button id="refresh-button" class="refresh-button">
+                Refresh Data
+            </button>
         </div>
         <!-- End Landing Page -->
 
     </div>
+
+    <script>
+        let refreshButton = document.getElementById("refresh-button");
+
+        refreshButton.addEventListener('click', () => {
+            window.location.reload();
+        })
+    </script>
 
     <script type="module">
         document.addEventListener("visibilitychange", () => {
