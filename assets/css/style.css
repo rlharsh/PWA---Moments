@@ -13,6 +13,10 @@
     src: url('/assets/fonts//Montserrat-ExtraLight.ttf');
 }
 
+* {
+	box-sizing: border-box;
+  }
+
 :root {
     --darkest-purple: #937DC2;
     --dark-purple: #C689C6;
@@ -20,6 +24,7 @@
     --lightest-pink: #FFE6F7;
     --text: #212427;
 	--text-light: rgba(0, 0, 0, 0.2);
+	--light-grey: rgba(220, 220, 220, 0.6);
 }
 
 body {
@@ -508,4 +513,13 @@ opacity: 0;
 	background-color: #000;
 	background-size:contain;
 	border-radius: 6px;
+}
+
+.dashboard-container {
+	margin: 0 auto;
+	width: 90%;
+	height: 200px;
+	border-radius: 6px;
+	padding: 1rem;
+	background-color: var(--light-grey);
 }
