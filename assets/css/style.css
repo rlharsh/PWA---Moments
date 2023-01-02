@@ -24,7 +24,6 @@
 
 body {
     font-family: 'ui-regular';
-    overscroll-behavior: contain;
 	color: var(--text);
 	background-color: #FFF;
 }
