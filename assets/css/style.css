@@ -316,9 +316,9 @@ input[type="file"] {
 }
 
 .user-image {
-	width: 96%;
-	height: 96%;
-	background-image: url('/assets/images/ui/avatar.jpg');
+	width: 98%;
+	height: 98%;
+	background-image: url('/assets/images/ui/avatar.jfif');
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;

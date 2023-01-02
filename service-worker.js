@@ -11,7 +11,7 @@ const assets = [
     '/assets/fonts/Montserrat-Regular.ttf',
     '/assets/fonts//Montserrat-ExtraLight.ttf',
     '/assets/images/ui/final_logo.png',
-    '/assets/images/ui/avatar.jpg',
+    '/assets/images/ui/avatar.jfif',
     '/assets/js/dots.js',
     '/assets/js/transitions.js',
     '/assets/images/ui/cta/memory.jpg',
