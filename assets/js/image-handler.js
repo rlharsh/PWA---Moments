@@ -40,3 +40,7 @@ document.getElementById("save-crop").addEventListener("click", e => {
     document.getElementById("user-image").style.backgroundImage=`url(${imgSrc})`
     photoCropper.classList.remove('show-cropper');
   });
+
+  document.getElementById("cancel-crop").addEventListener("click", e => {
+    photoCropper.classList.remove('show-cropper');
+  })
