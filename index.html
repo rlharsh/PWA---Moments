@@ -23,6 +23,9 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- Cropper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.css" integrity="sha512-C4k/QrN4udgZnXStNFS5osxdhVECWyhMsK1pnlk+LkC7yJGCqoYxW4mH3/ZXLweODyzolwdWSqmmadudSHMRLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Magic Moments</title>
 </head>
 <body>
@@ -155,13 +158,12 @@
           </nav>
             -->
     </div>
-    
+
     <!-- Main Content Wrapper -->
     <div id="primary-content-wrapper" class="primary-content-wrapper shadow">
 
         <!-- Landing Page -->
         <div id='landing-wrapper' class="landing-wrapper">
-
             <!-- Header -->
             <div id="header-container" class="header-container">
                 <div class="user-image-container shadow">
@@ -175,6 +177,10 @@
                 <h2>@peggy.harsh</h2>
             </div>
             
+            <div id="photo-cropper" class="photo-cropper">
+                <div id="result" class="result"></div>
+                <button id="save-crop">Crop Image</button>
+            </div>
 
         </div>
         <!-- End Landing Page -->
@@ -192,6 +198,7 @@
         }
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js" integrity="sha512-LjPH94gotDTvKhoxqvR5xR2Nur8vO5RKelQmG52jlZo7SwI5WLYwDInPn1n8H9tR0zYqTqfNxWszUEy93cHHwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/image-handler.js"></script>
     <script src="/assets/js/dots.js"></script>
     <script src="/assets/js/transitions.js"></script>
