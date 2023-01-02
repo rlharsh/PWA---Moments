@@ -174,8 +174,8 @@ body {
 }
 
 .menu-button {
-	top: 1rem;
-	left: 1rem;
+	bottom: 1rem;
+	right: 1rem;
 }
 
 .people-button {
@@ -221,34 +221,40 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 100%;
+	width: 90%;
     gap: 0.6rem;
+	margin: 2rem auto;
+	margin-top: 2rem;
+	border-radius: 10px;
+	border: 2px solid var(--lightest-pink);
+	padding-bottom: 1rem;
 }
 
 .header-container > h1 {
-    font-family: 'ui-bold';
-    color: var(--darkest-purple);
+    font-family: 'ui-regular';
+    color: var(--text);
     font-size: 1.4rem;
 }
 
 .header-container > h2 {
     font-size: 1rem;
-    color: var(--text);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .user-image-container {
     position: relative;
 	height: 140px;
 	width: 140px;
-	background-color: rgba(255, 255, 255, 0.8);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;
+	border-radius: 10px;
 	margin-top: 2rem;
 	z-index: 1;
 	margin-bottom: 1rem;
+	background: rgb(147,125,194);
+	background: linear-gradient(232deg, rgba(147,125,194,1) 0%, rgba(198,137,198,1) 73%, rgba(255,230,247,1) 100%);
 }
 
 .edit-container-header {
@@ -275,13 +281,13 @@ input[type="file"] {
 }
 
 .user-image {
-	width: 80%;
-	height: 80%;
+	width: 96%;
+	height: 96%;
 	background-image: url('/assets/images/ui/avatar.jpg');
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	border-radius: 50%;
+	border-radius: 10px;
 	left: 0;
 }
 
@@ -334,7 +340,7 @@ opacity: 0;
 }
 
 .show-cta-actions {
-	bottom: 2rem;
+	bottom: 4rem;
 }
 
 .cta-actions .cta-box:first-child {
@@ -435,16 +441,25 @@ opacity: 0;
 .crop-button-container {
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+}
+
+.photo-cropper > h1 {
+	margin-bottom: 1rem;
+	font-family: 'ui-regular';
+	font-size: 1.4rem;
 }
 
 .crop-button-container > button {
 	display: inline-block;
-	border: none;
-	background-color: transparent;
-	color: var(--text);
-	font-family: 'ui-bold';
+	border: solid 2px var(--darkest-purple);
+	background-color: var(--darkest-purple);
+	border-radius: 6px;
+	width: 40%;
+	margin: 1em;
+	color: #FFF;
+	font-family: 'ui-regular';
 	font-size: 1.2rem;
 	padding: 1rem;
 }
@@ -458,4 +473,5 @@ opacity: 0;
 	height: 60%;
 	background-color: #000;
 	background-size:contain;
+	border-radius: 6px;
 }
