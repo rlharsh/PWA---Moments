@@ -19,6 +19,7 @@
     --light-pink: #FFABE1;
     --lightest-pink: #FFE6F7;
     --text: #212427;
+	--text-light: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -226,19 +227,53 @@ body {
 	margin: 2rem auto;
 	margin-top: 2rem;
 	border-radius: 10px;
-	border: 2px solid var(--lightest-pink);
+	border: 2px solid #937DC220;
 	padding-bottom: 1rem;
 }
 
 .header-container > h1 {
-    font-family: 'ui-regular';
-    color: var(--text);
+    font-family: 'ui-bold';
+    color: var(--darkest-purple);
     font-size: 1.4rem;
 }
 
 .header-container > h2 {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.4);
+}
+
+.user-stats {
+	margin: 0 auto;
+	margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+	row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+	width: 80%;
+}
+
+.user-stats-information {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.user-stats-information > h2 {
+	color: var(--darkest-purple);
+	font-family: 'ui-bold';
+}
+
+.user-stats > h2 {
+	font-family: 'ui-bold';
+	color: var(--text-light);
+}
+
+.user-stats > h3 {
+	font-family: 'ui-bold';
+	color: var(--darkest-purple);
+	font-size: 1.4rem;
 }
 
 .user-image-container {
