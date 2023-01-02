@@ -5,8 +5,7 @@ const assets = [
     '/index.html',
     '/service-worker.js',
     '/logo.png',
-    '/manifest.json',
-    './assets/css/style.css',
+    '/assets/css/style.css',
     '/assets/fonts/Montserrat-Bold.ttf',
     '/assets/fonts/Montserrat-Regular.ttf',
     '/assets/fonts//Montserrat-ExtraLight.ttf',
@@ -19,7 +18,7 @@ const assets = [
     '/assets/images/ui/cta/random.jpg',
     '/assets/images/ui/cta/relationship.jpg',
     '/assets/images/ui/cta/reminder.jpg',
-    '/assets/images/ui/icons/alarms.svg',
+    '/assets/images/ui/icons/alarm.svg',
     '/assets/images/ui/icons/chat.svg',
     '/assets/images/ui/icons/discord.svg',
     '/assets/images/ui/icons/facebook.svg',
@@ -35,24 +34,26 @@ const assets = [
 ];
 
 self.addEventListener('install', evt => {
-    evt.waitUntil(
-        caches.open(staticCacheName)
-        .then(cache => {
-            cache.addAll(assets);
-        })
-    );
+    evt.waitUntil(async function() {
+        const cache = await caches.open(staticCacheName);
+
+        await cache.addAll(assets);
+    }())
 });
 
 self.addEventListener('activate', evt => {
-    evt.waitUntil(
-        caches.keys().then(keys => {
-            return Promise.all(keys
-                .filter(key => key !== staticCacheName)
-                .map(key => caches.delete(key))
-                );
-        })
-    );
-});
+    evt.waitUntil(async function() {
+        const cacheNames = await caches.keys()
+
+        await Promise.all(
+            cacheNames.filter((cacheName) => {
+                const deleteThisCache = cacheName !== staticCacheName
+
+                return deleteThisCache
+            }).map(cacheName => caches.delete(cacheName))
+        )
+    }())  
+})
 
 self.addEventListener('fetch', evt => {
 
