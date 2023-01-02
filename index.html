@@ -190,7 +190,7 @@
                     <h2>Relations</h2>
                     <h3>28</h3>
                     <h3>28</h3>
-                    <h3>28</h3>
+                    <h3>31</h3>
                 </div>
             </div>
             <div id="dashboard-container" class="dashboard-container">
@@ -201,16 +201,29 @@
 
     </div>
 
-
-
-
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(() => console.log('service worker registered'))
-                .catch(() => console.log('service worker not registered'));
-        }
+        document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+        console.log('APP resumed');
+        window.location.reload();
+    }
+});
+
     </script>
+
+
+    <script type="module">
+        document.addEventListener("visibilitychange", () => {
+            const state = document.visibilityState;
+            if (state === "hidden") {
+                
+            }
+
+            if (state === "visible") {
+                window.location.reload();
+            }
+    });
+  </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js" integrity="sha512-LjPH94gotDTvKhoxqvR5xR2Nur8vO5RKelQmG52jlZo7SwI5WLYwDInPn1n8H9tR0zYqTqfNxWszUEy93cHHwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/image-handler.js"></script>

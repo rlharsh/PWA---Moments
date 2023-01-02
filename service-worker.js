@@ -83,13 +83,6 @@ self.addEventListener('fetch', evt => {
     }())
 });
 
-self.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'visible') {
-        console.log('APP resumed');
-        window.location.reload();
-    }
-});
-
 // Open the cache
 
 /*
