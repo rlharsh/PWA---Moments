@@ -286,7 +286,7 @@ body {
 	background-color: #FFF;
 	padding: 0.8rem 2rem;
 	margin-top: 1rem;
-	border-radius: 20px;
+	border-radius: 10px;
 	border: 1px solid var(--darkest-purple);
 	color: var(--darkest-purple);
 	font-family: 'ui-bold';
@@ -577,4 +577,21 @@ opacity: 0;
 	font-family: 'ui-bold';
 	padding: 1rem;
 	text-align: center;
+}
+
+.navigation-drawer {
+	position: fixed;
+	bottom: 1rem;
+	width: 90%;
+	height: 56px;
+	background-color: white;
+	border-radius: 10px;
+	z-index: 200;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.drawer-button {
+	
 }
