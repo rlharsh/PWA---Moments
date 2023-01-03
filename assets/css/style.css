@@ -255,10 +255,9 @@ body {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
 	row-gap: 0.4rem;
-    justify-items: center;
+    justify-items: space-around;
     align-items: center;
 	width: 100%;
-	padding: 0.4rem;
 	background-color: #FFF;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -274,7 +273,7 @@ body {
 .user-stats-container > h3 {
 	color: var(--light-grey);
 	font-family: 'ui-regular';
-	font-size: 0.8rem;
+	font-size: 0.8rem;1
 }
 
 .user-stats-container > h2 {
