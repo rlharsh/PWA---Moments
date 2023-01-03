@@ -222,6 +222,7 @@ body {
 	opacity: 100%;
 	text-align: center;
 	margin-bottom: 2rem;
+	overflow: hidden;
 }
 
 .header-container {
