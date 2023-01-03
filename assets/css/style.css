@@ -295,6 +295,7 @@ body {
 	border-radius: 10px;
 	color: #FFF;
 	font-family: 'ui-bold';
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .no-border {
@@ -347,6 +348,7 @@ input[type="file"] {
 	background-position: center;
 	border-radius: 50%;
 	left: 0;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .box {
@@ -537,10 +539,9 @@ opacity: 0;
 .dashboard-container {
 	margin: 0 auto;
 	margin-top: 1rem;
-	width: 90%;
+	width: 100%;
 	border-radius: 6px;
 	padding: 1rem;
-	background-color: var(--lightest-grey);
 }
 
 .content-line {
@@ -555,6 +556,7 @@ opacity: 0;
 }
 
 .content-line > h2 {
+	font-size: 0.8em;
 	color: var(--darkest-purple);
 }
 
@@ -567,11 +569,13 @@ opacity: 0;
 	min-height: 42px;
 	background-color: #FFF;
 	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .grey-container > h1 {
 	color: var(--darkest-purple);
 	font-family: 'ui-regular';
+	font-size: 0.8rem;
 }
 
 .refresh-button {
