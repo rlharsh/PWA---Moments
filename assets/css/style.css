@@ -581,17 +581,20 @@ opacity: 0;
 
 .navigation-drawer {
 	position: fixed;
-	bottom: 1rem;
+	bottom: 2rem;
 	width: 90%;
 	height: 56px;
 	background-color: white;
-	border-radius: 10px;
+	border-radius: 40px;
 	z-index: 200;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
 }
 
 .drawer-button {
-	
+	font-size: 1.2em;
 }
