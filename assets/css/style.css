@@ -529,11 +529,16 @@ opacity: 0;
 .content-line {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .content-line > h1 {
 	color: var(--text-light);
 	font-family: 'ui-bold';
+}
+
+.content-line > h2 {
+	color: var(--darkest-purple);
 }
 
 .grey-container {
