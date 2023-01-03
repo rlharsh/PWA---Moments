@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v8';
+const staticCacheName = 'site-static-v1';
 const dynamicCache = 'site-dynamic-v1';
 const assets = [
     '/',
@@ -37,7 +37,6 @@ const assets = [
 self.addEventListener('install', evt => {
     evt.waitUntil(async function() {
         const cache = await caches.open(staticCacheName);
-
         await cache.addAll(assets);
     }())
 });
