@@ -27,6 +27,7 @@ const assets = [
     '/assets/images/ui/icons/memories.svg',
     '/assets/images/ui/icons/people.svg',
     '/assets/images/ui/icons/peoples.svg',
+    '/assets/images/ui/peggy.JPG',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css',
     'https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js',
