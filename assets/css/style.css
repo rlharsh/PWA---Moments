@@ -554,7 +554,7 @@ opacity: 0;
 
 .grey-container > h1 {
 	color: var(--darkest-purple);
-	font-family: 'ui-bold';
+	font-family: 'ui-regular';
 }
 
 .refresh-button {
