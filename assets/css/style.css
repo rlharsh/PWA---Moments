@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'ui-bold';
-    src: url('/assets/fonts/Montserrat-Bold.ttf');
+    src: url('/assets/fonts/SF-UI-Display-Bold.otf');
 }
 
 @font-face {
     font-family: 'ui-regular';
-    src: url('/assets/fonts/Montserrat-Regular.ttf');
+    src: url('/assets/fonts/SF-UI-Display-Regular.otf');
 }
 
 @font-face {
     font-family: 'ui-light';
-    src: url('/assets/fonts//Montserrat-ExtraLight.ttf');
+    src: url('/assets/fonts//SF-UI-Display-Light');
 }
 
 * {
@@ -22,10 +22,11 @@
     --dark-purple: #C689C6;
     --light-pink: #FFABE1;
     --lightest-pink: #FFE6F7;
-    --text: #212427;
-	--text-light: rgba(0, 0, 0, 0.2);
-	--light-grey: rgba(220, 220, 220, 0.4);
+    --text: #1F1F1F;
+	--text-light: #424242;
+	--light-grey: rgba(200, 200, 200, 1);
 	--light-text: rgbh(220, 220, 220, 1);
+	--lightest-grey: rgba(200, 200, 200, 0.2);
 }
 
 body {
@@ -233,19 +234,18 @@ body {
 	margin: 2rem auto;
 	margin-top: 2rem;
 	border-radius: 10px;
-	border: 2px solid #937DC220;
 	padding-bottom: 1rem;
 }
 
 .header-container > h1 {
     font-family: 'ui-bold';
-    color: var(--darkest-purple);
+    color: var(--text);
     font-size: 1.4rem;
 }
 
 .header-container > h2 {
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--light-grey);
 }
 
 .user-stats {
@@ -253,10 +253,10 @@ body {
 	margin-top: 1rem;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-	row-gap: 1rem;
+	row-gap: 0.4rem;
     justify-items: center;
     align-items: center;
-	width: 80%;
+	width: 100%;
 }
 
 .user-stats-information {
@@ -273,13 +273,23 @@ body {
 
 .user-stats > h2 {
 	font-family: 'ui-bold';
-	color: var(--text-light);
+	color: var(--text);
+	font-size: 1.2rem;
 }
 
 .user-stats > h3 {
-	font-family: 'ui-bold';
+	font-family: 'ui-regular';
+	color: var(--text);
+}
+
+.button {
+	background-color: #FFF;
+	padding: 0.4rem 1rem;
+	margin-top: 1rem;
+	border-radius: 10px;
+	border: 1px solid var(--darkest-purple);
 	color: var(--darkest-purple);
-	font-size: 1.4rem;
+	font-family: 'ui-bold';
 }
 
 .user-image-container {
@@ -290,12 +300,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin-top: 2rem;
 	z-index: 1;
 	margin-bottom: 1rem;
 	background: rgb(147,125,194);
-	background: linear-gradient(232deg, rgba(147,125,194,1) 0%, rgba(198,137,198,1) 73%, rgba(255,230,247,1) 100%);
 }
 
 .edit-container-header {
@@ -328,7 +337,7 @@ input[type="file"] {
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	border-radius: 10px;
+	border-radius: 50%;
 	left: 0;
 }
 
@@ -523,7 +532,7 @@ opacity: 0;
 	width: 90%;
 	border-radius: 6px;
 	padding: 1rem;
-	background-color: var(--light-grey);
+	background-color: var(--lightest-grey);
 }
 
 .content-line {
