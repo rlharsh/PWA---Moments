@@ -284,12 +284,13 @@ body {
 
 .button {
 	background-color: #FFF;
-	padding: 0.4rem 1rem;
+	padding: 0.8rem 2rem;
 	margin-top: 1rem;
-	border-radius: 10px;
+	border-radius: 20px;
 	border: 1px solid var(--darkest-purple);
 	color: var(--darkest-purple);
 	font-family: 'ui-bold';
+	font-size: 1em;
 }
 
 .user-image-container {
