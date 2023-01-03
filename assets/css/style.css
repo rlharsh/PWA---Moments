@@ -593,6 +593,7 @@ opacity: 0;
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .drawer-button {
